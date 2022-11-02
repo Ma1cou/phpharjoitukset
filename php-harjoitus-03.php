@@ -157,15 +157,35 @@ for ($numero = 0; $numero <= 70; $numero+=7) {
   echo "Seitsemän kertotaulu: $numero <br>";
 }
 ?>
-
-<h1> Harjoitus 17 </h1>
+<h1> Harjoitus 17 ja 18</h1>
 
 <?php
-function naytaViesti() {
-    echo "Tervehdys funktiosta!";
-    naytaViesti();
+function naytaViesti($nimi = "Mico")
+{
+    return "Tervehdys funktiosta! $nimi.\n";
 }
+echo naytaViesti();
 ?>
 
+
+<h1> Harjoitus 19 </h1>
+<?php
+$aika=time();
+echo($aika . "<br>");
+echo(date("Y-m-d",$aika));
+?>
+<h1> Harjoitus 20 </h1>
+<?php
+?>
+<h1> Harjoitus 21 </h1>
+<?php
+echo date("d-m-Y H:i:s", mktime(14,30,00,05,01,2002));
+?>
+<h1> Harjoitus 22 </h1>
+<?php
+echo date("W-H:i-Y", mktime(14,30,00,05,01,2002));
+?>
+
+<h1> Harjoitus 23 </h1>
 </body>
 </html>
